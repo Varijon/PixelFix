@@ -12,7 +12,12 @@
     "MixinIceFace",
     "MixinSchooling",
     "MixinShieldsDown",
-    "MixinStanceChange"
+    "MixinStanceChange",
+    "MixinFreeze",
+    "MixinRustedShieldItem",
+    "MixinRustedSwordItem",
+    "MixinShayminFormChange",
+    "MixinHoopaFormChange"
   ],
   "client": []
 }

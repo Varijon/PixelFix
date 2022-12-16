@@ -3,11 +3,8 @@ package com.varijon.tinies.mixin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-import com.pixelmonmod.pixelmon.api.battles.attack.AttackRegistry;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.AbstractAbility;
-import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.Disguise;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.HungerSwitch;
-import com.pixelmonmod.pixelmon.battles.attacks.Attack;
 import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 
 @Mixin(HungerSwitch.class)

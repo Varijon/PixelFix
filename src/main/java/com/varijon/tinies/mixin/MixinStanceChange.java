@@ -3,9 +3,7 @@ package com.varijon.tinies.mixin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-import com.pixelmonmod.pixelmon.api.battles.attack.AttackRegistry;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.AbstractAbility;
-import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.Disguise;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.StanceChange;
 import com.pixelmonmod.pixelmon.api.registries.PixelmonSpecies;
 import com.pixelmonmod.pixelmon.battles.attacks.Attack;

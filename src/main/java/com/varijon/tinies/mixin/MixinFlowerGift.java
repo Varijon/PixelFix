@@ -3,12 +3,9 @@ package com.varijon.tinies.mixin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-import com.pixelmonmod.pixelmon.api.battles.attack.AttackRegistry;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.AbstractAbility;
-import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.Disguise;
 import com.pixelmonmod.pixelmon.api.pokemon.ability.abilities.FlowerGift;
 import com.pixelmonmod.pixelmon.api.registries.PixelmonSpecies;
-import com.pixelmonmod.pixelmon.battles.attacks.Attack;
 import com.pixelmonmod.pixelmon.battles.controller.participants.PixelmonWrapper;
 import com.pixelmonmod.pixelmon.battles.status.StatusType;
 import com.pixelmonmod.pixelmon.battles.status.Weather;
