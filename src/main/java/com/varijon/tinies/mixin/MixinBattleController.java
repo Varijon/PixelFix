@@ -20,8 +20,7 @@ public class MixinBattleController
 	@Overwrite(remap=false)
 	private void checkEvolution() {
         for (Pokemon pokemon : this.checkedPokemon) {
-        	EvolveNextTicker.setWaitTicks(1);
-            EvolveNextTicker.addPokemon(pokemon);
+            EvolveNextTicker.addPokemon(pokemon,5);
         }
     }
 }

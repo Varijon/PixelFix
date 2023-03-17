@@ -1,6 +1,8 @@
 package com.varijon.tinies.PixelFix.ticker;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 
@@ -11,7 +13,7 @@ import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 public class EvolveNextTicker 
 {
-	static ArrayList<Pokemon> lstPokemonToEvolve = new ArrayList<Pokemon>();
+	static HashMap<Pokemon,Integer> lstPokemonToEvolve = new HashMap<Pokemon,Integer>();
 	static int waitTicks = 0;
 	
 	@SubscribeEvent
@@ -23,21 +25,15 @@ public class EvolveNextTicker
 			{
 				return;
 			}
-			MinecraftServer server = ServerLifecycleHooks.getCurrentServer();
-			if(server.getTickCount() % 20 != 0)
+			for (Map.Entry<Pokemon,Integer> set : lstPokemonToEvolve.entrySet()) 
 			{
-				return;
-			}
-			if(waitTicks > 0)
-			{
-				waitTicks -= 1;
-				return;
-			}
-			for (Pokemon pokemon : lstPokemonToEvolve) 
-			{
-	            pokemon.tryEvolution();
+				set.setValue(set.getValue() - 1);
+				if(set.getValue() == 0)
+				{
+		            set.getKey().tryEvolution();
+				}
 	        }
-			lstPokemonToEvolve.clear();
+			lstPokemonToEvolve.entrySet().removeIf(e -> e.getValue() == 0);
 		}
 		catch(Exception ex)
 		{
@@ -45,18 +41,8 @@ public class EvolveNextTicker
 		}
 	}
 	
-	public static void addPokemon(Pokemon pokemon)
+	public static void addPokemon(Pokemon pokemon, int ticks)
 	{
-		lstPokemonToEvolve.add(pokemon);
+		lstPokemonToEvolve.put(pokemon, ticks);
 	}
-
-	public static int getWaitTicks() {
-		return waitTicks;
-	}
-
-	public static void setWaitTicks(int waitTicks) {
-		EvolveNextTicker.waitTicks = waitTicks;
-	}
-	
-	
 }
