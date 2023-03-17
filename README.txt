@@ -6,3 +6,8 @@ IceFace
 Schooling
 ShieldsDown
 StanceChange
+Freeze
+RustedShieldItem
+RustedSwordItem
+ShayminFormChange
+HoopaFormChange
