@@ -13,3 +13,4 @@ ShayminFormChange
 HoopaFormChange
 
 BattleController
+EvolutionStoneOreBlock
