@@ -11,3 +11,5 @@ RustedShieldItem
 RustedSwordItem
 ShayminFormChange
 HoopaFormChange
+
+BattleController
