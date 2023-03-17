@@ -18,7 +18,8 @@
     "MixinRustedSwordItem",
     "MixinShayminFormChange",
     "MixinHoopaFormChange",
-	"MixinBattleController"
+	"MixinBattleController",
+	"MixinEvolutionStoneOreBlock"
   ],
   "client": []
 }
