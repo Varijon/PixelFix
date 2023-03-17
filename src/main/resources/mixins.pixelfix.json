@@ -17,7 +17,8 @@
     "MixinRustedShieldItem",
     "MixinRustedSwordItem",
     "MixinShayminFormChange",
-    "MixinHoopaFormChange"
+    "MixinHoopaFormChange",
+	"MixinBattleController"
   ],
   "client": []
 }
