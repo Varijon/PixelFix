@@ -14,3 +14,4 @@ HoopaFormChange
 
 BattleController
 EvolutionStoneOreBlock
+GroundBirds
