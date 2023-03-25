@@ -30,7 +30,7 @@ public class MixinGroundBirds
 	public static MoveSkill createMoveSkill() {
         MoveSkill moveSkill = new MoveSkill("ground").setName("pixelmon.moveskill.ground").describe("pixelmon.moveskill.ground.description1", "pixelmon.moveskill.ground.description2").setAnyMoves("Gravity", "Smack Down").setUsePP(true).setIcon(ResourceLocationHelper.of("pixelmon", "textures/gui/overlay/externalmoves/groundbirds.png")).setDefaultCooldownTicks(900);
         moveSkill.setBehaviourNoTarget(usingPixelmon -> {
-            usingPixelmon.level.getEntitiesOfClass(PixelmonEntity.class, AxisAlignedBB.ofSize((double)600.0, (double)600.0, (double)600.0).expandTowards(usingPixelmon.position())).stream().filter(pixelmon -> {
+            usingPixelmon.level.getEntitiesOfClass(PixelmonEntity.class, AxisAlignedBB.ofSize((double)600.0, (double)600.0, (double)600.0).move(usingPixelmon.position())).stream().filter(pixelmon -> {
                 if (!affectOwnedPokemon && pixelmon.hasOwner()) {
                     return false;
                 }
