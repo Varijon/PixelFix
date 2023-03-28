@@ -3,6 +3,8 @@ package com.varijon.tinies.PixelFix;
 import org.apache.logging.log4j.Logger;
 
 import com.pixelmonmod.pixelmon.Pixelmon;
+import com.varijon.tinies.PixelFix.handler.EvoFixHandler;
+import com.varijon.tinies.PixelFix.ticker.BeeRemovalTicker;
 import com.varijon.tinies.PixelFix.ticker.EvolveNextTicker;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +34,8 @@ public class PixelFix
     public void setup(FMLCommonSetupEvent event) 
     {
 		MinecraftForge.EVENT_BUS.register(new EvolveNextTicker());
+		MinecraftForge.EVENT_BUS.register(new EvoFixHandler());
+//		MinecraftForge.EVENT_BUS.register(new BeeRemovalTicker());
 	}
 	
 	@SubscribeEvent
