@@ -15,3 +15,4 @@ HoopaFormChange
 BattleController
 EvolutionStoneOreBlock
 GroundBirds
+PokeDisplayBlock
