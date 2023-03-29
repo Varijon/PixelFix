@@ -20,7 +20,8 @@
     "MixinHoopaFormChange",
 	"MixinBattleController",
 	"MixinEvolutionStoneOreBlock",
-	"MixinGroundBirds"
+	"MixinGroundBirds",
+	"MixinPokeDisplayBlock"
   ],
   "client": []
 }
