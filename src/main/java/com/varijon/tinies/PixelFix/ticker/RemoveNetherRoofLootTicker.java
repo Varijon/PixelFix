@@ -27,7 +27,7 @@ public class RemoveNetherRoofLootTicker
 			{
 				return;
 			}
-			if(server.getTickCount() % 20 != 0)
+			if(server.getTickCount() % 5 != 0)
 			{
 				return;
 			}
