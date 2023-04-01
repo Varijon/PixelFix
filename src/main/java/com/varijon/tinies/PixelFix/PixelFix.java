@@ -4,8 +4,10 @@ import org.apache.logging.log4j.Logger;
 
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.varijon.tinies.PixelFix.handler.EvoFixHandler;
+import com.varijon.tinies.PixelFix.handler.LegendPersistenceHandler;
 import com.varijon.tinies.PixelFix.ticker.BeeRemovalTicker;
 import com.varijon.tinies.PixelFix.ticker.EvolveNextTicker;
+import com.varijon.tinies.PixelFix.ticker.LegendPersistenceTicker;
 import com.varijon.tinies.PixelFix.ticker.RemoveNetherRoofLootTicker;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -36,8 +38,10 @@ public class PixelFix
     {
 		MinecraftForge.EVENT_BUS.register(new EvolveNextTicker());
 		MinecraftForge.EVENT_BUS.register(new EvoFixHandler());
+		MinecraftForge.EVENT_BUS.register(new LegendPersistenceTicker());
 		MinecraftForge.EVENT_BUS.register(new RemoveNetherRoofLootTicker());
 //		MinecraftForge.EVENT_BUS.register(new BeeRemovalTicker());
+		Pixelmon.EVENT_BUS.register(new LegendPersistenceHandler());
 	}
 	
 	@SubscribeEvent
