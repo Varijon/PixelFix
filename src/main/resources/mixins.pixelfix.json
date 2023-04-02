@@ -22,7 +22,8 @@
 	"MixinEvolutionStoneOreBlock",
 	"MixinGroundBirds",
 	"MixinPokeDisplayBlock",
-	"MixinPixelmonBreedingLogic"
+	"MixinPixelmonBreedingLogic",
+	"MixinDexCheckCommand"
   ],
   "client": []
 }
