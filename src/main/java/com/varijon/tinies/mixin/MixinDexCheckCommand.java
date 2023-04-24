@@ -93,13 +93,9 @@ public class MixinDexCheckCommand extends PixelCommand
     @Override
     public List<String> getTabCompletions(MinecraftServer server, CommandSource sender, String[] args, BlockPos pos) 
     {
-        if (PixelmonSpawning.coordinator != null) 
-        {
-            ArrayList<String> list = Lists.newArrayList();
-            list.add("r");
-            list.add("remaining");
-            return args.length == 1 ? list : Collections.emptyList();
-        }
-        return Collections.emptyList();
+        ArrayList<String> list = Lists.newArrayList();
+        list.add("r");
+        list.add("remaining");
+        return args.length == 1 ? list : Collections.emptyList();
     }
 }
