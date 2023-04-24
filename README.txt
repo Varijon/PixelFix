@@ -16,3 +16,4 @@ BattleController
 EvolutionStoneOreBlock
 GroundBirds
 PokeDisplayBlock
+DexCheckCommand
