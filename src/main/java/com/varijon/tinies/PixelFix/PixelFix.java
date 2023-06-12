@@ -37,7 +37,7 @@ public class PixelFix
 	@SubscribeEvent
     public void setup(FMLCommonSetupEvent event) 
     {
-		MinecraftForge.EVENT_BUS.register(new EvolveNextTicker());
+//		MinecraftForge.EVENT_BUS.register(new EvolveNextTicker());
 		MinecraftForge.EVENT_BUS.register(new EvoFixHandler());
 		MinecraftForge.EVENT_BUS.register(new SuffocationPreventionHandler());
 		MinecraftForge.EVENT_BUS.register(new LegendPersistenceTicker());

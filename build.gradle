@@ -15,7 +15,7 @@ apply plugin: 'maven-publish'
 // MixinGradle:
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.0.12'
+version = '1.0.13'
 group = 'com.varijon.tinies.PixelFix' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'pixelfix'
 
@@ -129,7 +129,7 @@ dependencies {
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"
 
-    implementation files('/libs/Pixelmon-1.16.5-9.1.0-server.jar')
+    implementation files('/libs/Pixelmon-1.16.5-9.1.5-server.jar')
     // Real examples
     // compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
     // compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
