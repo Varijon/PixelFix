@@ -12,8 +12,11 @@ RustedSwordItem
 ShayminFormChange
 HoopaFormChange
 
-BattleController
-EvolutionStoneOreBlock
 GroundBirds
 PokeDisplayBlock
 DexCheckCommand
+
+Removed/disabled fixes:
+BattleController
+EvolutionStoneOreBlock
+IceFace
