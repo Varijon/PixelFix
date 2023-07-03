@@ -20,7 +20,8 @@
 	"MixinGroundBirds",
 	"MixinPokeDisplayBlock",
 	"MixinPixelmonBreedingLogic",
-	"MixinDexCheckCommand"
+	"MixinDexCheckCommand",
+	"MixinPokemonStorage"
   ],
   "client": []
 }
